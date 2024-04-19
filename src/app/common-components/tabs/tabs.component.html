@@ -1,0 +1,42 @@
+<div class="text-xs">
+  <div
+    class="{{
+      isSubTab
+        ? 'bg-[#00805A] rounded-b-lg tab-shadow justify-between items-center gap-5 p-2'
+        : 'bg-[#F3F3F3] rounded-t-lg'
+    }} flex gap-5"
+  >
+    <div class="flex items-center gap-2">
+      <button
+        *ngFor="let step of steps; let i = index"
+        [class.sub-tab-active]="isSubTab && step === activeStep"
+        [class.active]="!isSubTab && step === activeStep"
+        (click)="selectTab(step)"
+        class="{{
+          isSubTab
+            ? 'px-5 py-[10px] text-white sub-tab-svg-img'
+            : 'p-4 text-[#3A3B3D] svg-img hover:text-[#004b8d]'
+        }} flex items-center whitespace-nowrap gap-2 font-semibold"
+      >
+        <img
+          [src]="'../../../assets/svg/' + step?.icon"
+          alt=""
+          class="h-[18px] w-[18px] object-contain"
+        />
+        {{ step.stepName }}
+      </button>
+    </div>
+
+    <div *ngIf="isSubTab">
+      <button
+        type="button"
+        class="bg-[#00573D] rounded-lg px-5 py-[10px] text-white font-semibold hover:scale-105 transition-all duration-300"
+      >
+        Calculate
+      </button>
+    </div>
+  </div>
+  <div class="{{ isSubTab ? 'mt-4' : '' }} tab-content">
+    <ng-container *ngTemplateOutlet="getTabContent(activeStep)"></ng-container>
+  </div>
+</div>

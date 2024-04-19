@@ -1,0 +1,41 @@
+.svg-img:hover img {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(99%) saturate(965%)
+    hue-rotate(192deg) brightness(95%) contrast(91%);
+}
+
+.svg-img.active img {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(99%) saturate(965%)
+    hue-rotate(192deg) brightness(95%) contrast(91%);
+}
+
+.active {
+  color: #004b8d !important;
+  border-bottom: 2px solid #004b8d;
+  border-radius: 2px;
+}
+
+.sub-tab-active {
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(52, 64, 81, 0.12);
+  border-radius: 8px;
+  color: #344051;
+}
+
+.sub-tab-svg-img:hover {
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(52, 64, 81, 0.12);
+  border-radius: 8px;
+  color: #344051;
+}
+
+.sub-tab-svg-img:hover img {
+  filter: brightness(32%) saturate(0%);
+}
+
+.sub-tab-svg-img.sub-tab-active img {
+  filter: brightness(32%) saturate(0%);
+}
+
+.tab-shadow {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,231 @@
+<div
+  class="text-xs border-[1px] border-[#004B8D] my-3 card-shadow rounded-lg overflow-hidden"
+>
+  <div class="flex bg-[#004B8D] justify-between items-center p-2 rounded-t-lg">
+    <h1 class="text-white">Valve & Regulator Catalogue</h1>
+  </div>
+
+  <div class="grid grid-cols-3">
+    <div class="col-span-2 p-2">
+      <div
+        class="bg-[#BFE7FF] p-2 border-[1px] border-[#CED2DA] rounded-lg flex lg:flex-row flex-col gap-2"
+      >
+        <div class="lg:w-[50%] sm:w-full flex lg:flex-row flex-col gap-2">
+          <div class="flex flex-1 gap-1 flex-col rounded-lg">
+            <label class="font-semibold mb-2">Select Valve Type</label>
+            <select class="p-2 rounded-lg border-[1px] border-[#CED2DA]">
+              <option selected>Select Category</option>
+            </select>
+          </div>
+
+          <div class="flex flex-1 gap-1 flex-col rounded-lg">
+            <label class="font-semibold mb-2">Select Category</label>
+            <select class="p-2 rounded-lg border-[1px] border-[#CED2DA]">
+              <option selected>Select Category</option>
+            </select>
+          </div>
+        </div>
+
+        <div
+          class="lg:w-[50%] sm:w-full flex lg:flex-row flex-col justify-between items-center gap-2"
+        >
+          <div class="flex gap-2">
+            <div class="h-16 rounded-lg w-[1px] bg-black lg:flex hidden"></div>
+
+            <div class="flex items-center mt-2">
+              <div class="relative w-fit">
+                <input
+                  type="number"
+                  placeholder="Lookup"
+                  class="p-2 pl-6 w-20 rounded-lg border-[1px] placeholder:text-black border-[#CED2DA] font-semibold"
+                />
+                <div class="absolute inset-y-0 left-0 p-2 text-[#637083]">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-[#004B8D] flex gap-2 items-center">
+            <img
+              src="../../../assets/svg/pdf_icon.svg"
+              alt=""
+              class="h-10 w-10 object-contain"
+            />
+            <p class="font-extraSmall font-semibold">
+              View the product bulletin for the <br />
+              selected category of value
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#3A3B3D] w-full flex justify-between items-center rounded-lg my-3 p-2 text-white"
+      >
+        <h1 class="font-semibold">25 matching valves</h1>
+
+        <div class="flex items-center gap-3">
+          <div class="flex items-center gap-1">
+            <input type="checkbox" checked class="accent-[#00805A]" />
+            <label>Cv</label>
+          </div>
+          <div class="flex items-center gap-1">
+            <input type="checkbox" checked class="accent-[#00805A]" />
+            <label>Fd</label>
+          </div>
+
+          <div class="flex items-center gap-1">
+            <input type="checkbox" checked class="accent-[#00805A]" />
+            <label>FI</label>
+          </div>
+
+          <div class="flex items-center gap-1">
+            <input type="checkbox" checked class="accent-[#00805A]" />
+            <label>Kv</label>
+          </div>
+
+          <div class="flex items-center gap-1">
+            <input type="checkbox" checked class="accent-[#00805A]" />
+            <label>Xt</label>
+          </div>
+
+          <div class="flex items-center gap-1">
+            <input type="checkbox" checked class="accent-[#00805A]" />
+            <label>Hits Only</label>
+          </div>
+
+          <div class="h-5 rounded-lg w-[1px] bg-gray-500 lg:flex hidden"></div>
+
+          <div class="flex items-center gap-1">
+            <input type="radio" checked />
+            <label>NPS</label>
+          </div>
+          <div class="flex items-center gap-1">
+            <input type="radio" checked />
+            <label>DN</label>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-arrows-left-right-to-line rotate-90"></i>
+          <p>Collapse all results</p>
+        </div>
+      </div>
+
+      <div>
+        <app-valve-table></app-valve-table>
+      </div>
+    </div>
+
+    <div class="col-span-1 bg-[#3A3B3D] p-4 space-y-4">
+      <div class="bg-white p-2 rounded-lg">
+        <div class="flex items-center gap-2">
+          <div class="bg-[#00805A] px-[5px] py-[2px] text-white rounded-full">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <h1 class="text-[#00805A] font-semibold text-sm">NPS1</h1>
+        </div>
+
+        <div class="flex items-start gap-3 mt-4 pl-2">
+          <div class="flex items-start gap-2">
+            <i
+              class="fa-solid fa-up-right-and-down-left-from-center text-[#9FA1A4]"
+            ></i>
+            <div class="flex flex-col items-start text-[#00805A]">
+              <p>Valve Size</p>
+              <h1 class="text-sm font-semibold">1 inch</h1>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-circle-notch text-[#9FA1A4]"></i>
+            <div class="flex flex-col items-start text-[#00805A]">
+              <p class="relative bottom-[2px]">Port Diameter</p>
+              <h1 class="text-sm font-semibold">1 inch</h1>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-circle-notch text-[#9FA1A4]"></i>
+            <div class="flex flex-col items-start text-[#00805A]">
+              <p class="relative bottom-[2px]">Travel</p>
+              <h1 class="text-sm font-semibold">3/4 inch</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-lg">
+        <div class="bg-[#F3F3F3] p-2 rounded-t-lg">
+          <h1 class="font-semibold text-sm">Co-Efficient Graph</h1>
+        </div>
+        <div class="bg-white rounded-b-lg p-2">
+          <!-- <div style="display: block">
+            <canvas
+              baseChart
+              [datasets]="lineChartData"
+              [labels]="lineChartLabels"
+              [options]="lineChartOptions"
+              [legend]="lineChartLegend"
+              [type]="lineChartType"
+            >
+            </canvas>
+          </div> -->
+          <div>
+            <p class="text-center">Flow Coefficient Graph</p>
+            <img src="../../../assets/svg/Graph.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-lg">
+        <div class="bg-[#F3F3F3] p-2 rounded-t-lg">
+          <h1 class="font-semibold text-sm">Legends</h1>
+        </div>
+        <div class="bg-white rounded-b-lg p-2 space-y-1">
+          <div class="flex items-center gap-2">
+            <p class="h-[1.5px] w-[6px] bg-[#004B8D]"></p>
+            <p>Flow Data - Chart Cv Valve Coefficient</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="h-2 w-2 rounded-full bg-[#C23479]"></div>
+            <p>Minimum - (37, 70)</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="h-2 w-2 rounded-full bg-[#DC743C]"></div>
+            <p>Normal - (66, 240)</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="h-2 w-2 rounded-full bg-[#44B44F]"></div>
+            <p>Maximum - (75, 320)</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="h-2 w-2 rounded-full bg-[#3B378B]"></div>
+            <p>Others 1 - (82, 380)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-lg">
+        <div class="bg-[#F3F3F3] p-2 rounded-t-lg">
+          <h1 class="font-semibold text-sm">Catalogue Notes</h1>
+        </div>
+        <div class="bg-white rounded-b-lg p-2 space-y-1">
+          <div class="flex items-center gap-2">
+            <div class="h-[6px] w-[6px] rounded-full bg-black"></div>
+            <p>FI (KM) is at 100% Travel</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="h-[6px] w-[6px] rounded-full bg-black"></div>
+            <p>Bulletin 51.1:ED</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="h-[6px] w-[6px] rounded-full bg-black"></div>
+            <p>For 6 inch restricted, use Type EWD</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

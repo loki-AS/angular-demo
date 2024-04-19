@@ -1,0 +1,279 @@
+<div
+  class="text-xs text-[#344051] border-[1px] card-shadow border-[#004B8D] rounded-lg my-2 overflow-hidden"
+>
+  <div class="flex bg-[#004B8D] justify-between items-center p-2 rounded-t-lg">
+    <h1 class="text-white">Sizing Options</h1>
+  </div>
+
+  <div class="p-2">
+    <div class="h-24 flex gap-3">
+      <div class="bg-[#BFE7FF] rounded-lg w-[10%]">
+        <div class="flex gap-2 flex-col rounded-lg p-2">
+          <label class="font-semibold mb-2">Sizing For</label>
+          <select class="p-2 rounded-lg border-[1px] border-[#CED2DA]">
+            <option selected>Gas</option>
+          </select>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#F3F3F3] rounded-lg flex-1 px-2 whitespace-nowrap flex justify-between items-center gap-5"
+      >
+        <div class="space-y-2">
+          <h1 class="font-semibold">Noise Method</h1>
+          <div class="flex justify-between gap-3">
+            <div class="flex items-center gap-1">
+              <input type="radio" checked />
+              <label>None</label>
+            </div>
+            <div class="flex items-center gap-1">
+              <input type="radio" />
+              <label>IEC</label>
+            </div>
+            <div class="flex items-center gap-1">
+              <input type="radio" />
+              <label>Comp</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-semibold">Piping Size</h1>
+          <div class="flex justify-between gap-3">
+            <div class="flex items-center gap-1">
+              <input type="radio" checked />
+              <label>Schedule</label>
+            </div>
+            <div class="flex items-center gap-1">
+              <input type="radio" />
+              <label>Thickness</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-semibold">Solve For</h1>
+          <div class="flex justify-between gap-3">
+            <div class="flex items-center gap-1">
+              <input type="radio" checked />
+              <label>CV</label>
+            </div>
+            <div class="flex items-center gap-1">
+              <input type="radio" />
+              <label>DP</label>
+            </div>
+            <div class="flex items-center gap-1">
+              <input type="radio" />
+              <label>Flow</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-semibold">Flow Type</h1>
+          <div class="flex justify-between gap-3">
+            <div class="flex items-center gap-1">
+              <input type="radio" checked />
+              <label>Turbulent</label>
+            </div>
+            <div class="flex items-center gap-1">
+              <input type="radio" checked />
+              <label>Non-Turbulent</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-semibold">Insulation Credit</h1>
+          <div class="flex justify-between gap-3">
+            <div class="flex items-center gap-1">
+              <input type="radio" checked />
+              <label>None</label>
+            </div>
+            <div class="flex items-center gap-1">
+              <input type="radio" checked />
+              <label>Acoustic</label>
+            </div>
+            <div class="flex items-center gap-1">
+              <input type="radio" checked />
+              <label>Thermal</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-semibold">Estimate</h1>
+          <div class="flex justify-between gap-3">
+            <div class="flex items-center gap-1">
+              <input type="radio" />
+              <label>Z1</label>
+            </div>
+            <div class="flex items-center gap-1">
+              <input type="radio" />
+              <label>Optional Velocity</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-2 py-4 flex justify-between gap-3 whitespace-nowrap">
+      <div class="h-full">
+        <label class="font-semibold">Design Pressure</label>
+        <div class="flex items-center mt-2">
+          <div class="relative w-full">
+            <input
+              type="number"
+              placeholder="-"
+              class="p-2 rounded-lg border-[1px] border-[#CED2DA]"
+            />
+            <p class="absolute inset-y-0 right-0 p-2 text-[#637083]">psla</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-full">
+        <label class="font-semibold">Design Temperature</label>
+        <div class="flex items-center mt-2">
+          <div class="relative w-full">
+            <input
+              type="number"
+              placeholder="-"
+              class="p-2 rounded-lg border-[1px] border-[#CED2DA]"
+            />
+            <p class="absolute inset-y-0 right-0 p-2 text-[#637083]">deg R</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-full">
+        <label class="font-semibold">Max. Operating Temperature</label>
+        <div class="flex items-center mt-2">
+          <div class="relative w-full">
+            <input
+              type="number"
+              placeholder="-"
+              class="p-2 rounded-lg border-[1px] border-[#CED2DA]"
+            />
+            <p class="absolute inset-y-0 right-0 p-2 text-[#637083]">psla</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-full">
+        <label class="font-semibold">Flowing Drop</label>
+        <div class="flex items-center mt-2">
+          <div class="relative w-full">
+            <input
+              type="number"
+              placeholder="-"
+              class="p-2 rounded-lg border-[1px] border-[#CED2DA]"
+            />
+            <p class="absolute inset-y-0 right-0 p-2 text-[#637083]">bar</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-full">
+        <label class="font-semibold">ShutOff Pressure</label>
+        <div class="flex items-center mt-2">
+          <div class="relative w-full">
+            <input
+              type="number"
+              placeholder="-"
+              class="p-2 rounded-lg border-[1px] border-[#CED2DA]"
+            />
+            <p class="absolute inset-y-0 right-0 p-2 text-[#637083]">psla</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-full">
+        <label class="font-semibold">Atmospheric Pressure</label>
+        <div class="flex items-center mt-2">
+          <div class="relative w-full">
+            <input
+              type="number"
+              placeholder="-"
+              class="p-2 rounded-lg border-[1px] border-[#CED2DA]"
+            />
+            <p class="absolute inset-y-0 right-0 p-2 text-[#637083]">psi</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-full w-96">
+        <label class="font-semibold">Service Description</label>
+        <div class="flex items-center mt-2 w-96">
+          <textarea
+            class="p-2 rounded-lg border-[1px] border-[#CED2DA]"
+            placeholder="Boiler feed water separator / cooling unit"
+            rows="2"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="my-4 text-xs">
+  <div class="border-[1px] border-[#BABFC7] card-shadow rounded-lg">
+    <div class="space-x-2 p-2">
+      <button
+        class="px-5 py-[10px] rounded-lg bg-[#F3F3F3] border-[1px] border-black"
+      >
+        <span class="font-semibold">Minimum</span>
+        <span class="bg-[#F8B11E] px-2 py-[3px] rounded-full text-white ml-2"
+          >3</span
+        >
+      </button>
+
+      <button
+        class="px-5 py-[10px] rounded-lg bg-[#F3F3F3] border-[1px] border-[#F3F3F3] hover:border-black"
+      >
+        <span class="text-[#637083]">Normal</span>
+        <span class="bg-[#F8B11E] px-2 py-[3px] rounded-full text-white ml-2"
+          >3</span
+        >
+      </button>
+
+      <button
+        class="px-5 py-[10px] rounded-lg bg-[#F3F3F3] border-[1px] border-[#F3F3F3] hover:border-black"
+      >
+        <span class="text-[#637083]">Maximum</span>
+        <span class="bg-[#F8B11E] px-2 py-[3px] rounded-full text-white ml-2"
+          >3</span
+        >
+      </button>
+
+      <button
+        class="px-5 py-[10px] rounded-lg bg-[#F3F3F3] border-[1px] border-[#F3F3F3] hover:border-black"
+      >
+        <span class="text-[#637083]">Others</span>
+        <span class="bg-[#F8B11E] px-2 py-[3px] rounded-full text-white ml-2"
+          >3</span
+        >
+      </button>
+
+      <button
+        class="px-5 py-[10px] rounded-lg bg-[#F3F3F3] border-[1px] border-[#F3F3F3] hover:border-black"
+      >
+        <i class="fa-solid fa-circle-exclamation text-red-500"></i>
+        <span class="text-[#637083] ml-2">Mismatch Warning</span>
+      </button>
+    </div>
+
+    <div class="bg-[#FFEECC] rounded-b-lg mt-10">
+      <div class="py-2 px-4">
+        <h1 class="font-semibold leading-6">2 Mismatches</h1>
+        <div class="pl-1 pt-1 space-y-[2px]">
+          <p>
+            1. The Valve/Pipe Size Combination Does Not Have Enough capacity
+            (5.1.1)
+          </p>
+          <p>2. Calculate for variable flow coefficient (Cv) Failed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

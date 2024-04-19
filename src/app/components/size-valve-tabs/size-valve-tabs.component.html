@@ -1,0 +1,22 @@
+<div>
+  <app-tabs [steps]="sizeValveTabs" [activeIndex]="4" [isSubTab]="true">
+    <ng-template #tabContent let-data>
+      <h1>Sizing Options component</h1>
+    </ng-template>
+    <ng-template #tabContent let-data>
+      <h1>Sizing Inputs component</h1>
+    </ng-template>
+    <ng-template #tabContent let-data>
+      <h1>Sizing Outputs component</h1>
+    </ng-template>
+    <ng-template #tabContent let-data>
+      <h1>Valve / Regulator Catalog component</h1>
+    </ng-template>
+    <ng-template #tabContent let-data>
+      <app-sizing-input></app-sizing-input>
+      <app-sizing-options></app-sizing-options>
+      <app-sizing-output></app-sizing-output>
+      <app-regulator-catalog></app-regulator-catalog>
+    </ng-template>
+  </app-tabs>
+</div>

@@ -1,0 +1,541 @@
+<div
+  class="text-xs border-[1px] border-[#004B8D] card-shadow rounded-lg overflow-hidden"
+>
+  <div class="flex bg-[#004B8D] justify-between items-center p-2 rounded-t-lg">
+    <h1 class="text-white">Sizing Inputs</h1>
+
+    <div class="flex items-center">
+      <label class="inline-flex items-center cursor-pointer">
+        <input type="checkbox" value="" class="sr-only peer" />
+        <div
+          class="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"
+        ></div>
+        <span class="font-medium text-white pl-2">Technical Library</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="flex text-xs">
+    <!-- col-1 -->
+    <div class="w-[20%] mb-1 whitespace-nowrap">
+      <h1 class="p-2 font-semibold border-b-[1px] border-b-[#BABFC7]">Name</h1>
+      <div class="t-body">
+        <p class="px-2 py-[8.9px] border-b-[1px] border-b-[#BABFC7]">Gas</p>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-b-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>Mass Flow Rate gas</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-b-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>Mass Flow Rate gas</option>
+          </select>
+        </div>
+        <p class="px-2 py-[8.5px] border-b-[1px] border-b-[#BABFC7]">
+          Inlet Pressure
+        </p>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-b-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>Pressure Differential</option>
+          </select>
+        </div>
+        <p class="px-2 py-[8.9px] border-b-[1px] border-b-[#BABFC7]">
+          Inlet Temperature
+        </p>
+        <div
+          class="flex items-center gap-2 p-2 border-b-[1px] border-b-[#BABFC7]"
+        >
+          <input type="checkbox" checked />
+          <p>Pressure Drop Ratio Factor (xt)</p>
+        </div>
+        <div
+          class="flex items-center gap-2 p-2 border-b-[1px] border-b-[#BABFC7]"
+        >
+          <input type="checkbox" checked />
+          <p>Recovery Factor (FI)</p>
+        </div>
+        <div
+          class="flex items-center gap-2 px-2 py-[8.5px] border-b-[1px] border-b-[#BABFC7]"
+        >
+          <input type="checkbox" checked />
+          <p>Valve Style Modifier (FD)</p>
+        </div>
+        <p class="p-2 border-b-[1px] border-b-[#BABFC7]">Upstream pipe size</p>
+        <p class="px-2 py-[8.8px] border-b-[1px] border-b-[#BABFC7]">
+          Upstream pipe schedule
+        </p>
+        <p class="p-2 border-b-[1px] border-b-[#BABFC7]">
+          Downstream pipe size
+        </p>
+        <div
+          class="flex items-center gap-2 px-2 py-[8.5px] border-b-[1px] border-b-[#BABFC7]"
+        >
+          <input type="checkbox" checked />
+          <p>Valve Diameter</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- col-2 -->
+    <div class="w-[10%] mb-1 whitespace-nowrap">
+      <h1 class="p-2 font-semibold border-x-[1px] border-[#BABFC7]">Unit</h1>
+      <div
+        class="flex-1 p-2 flex justify-between items-center border-[1px] border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>Ib/h</option>
+        </select>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-x-[1px] border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>psia</option>
+        </select>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>bar</option>
+        </select>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-t-0 border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>degR</option>
+        </select>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-t-0 border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>M</option>
+        </select>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-t-0 border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>cSt</option>
+        </select>
+      </div>
+      <div class="p-2 border-[1px] border-t-0 border-[#BABFC7]">
+        <span class="text-white">empty</span>
+      </div>
+      <div class="p-2 border-[1px] border-t-0 border-[#BABFC7]">
+        <span class="text-white">empty</span>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-t-0 border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>in</option>
+        </select>
+      </div>
+      <div class="p-2 border-[1px] border-t-0 border-[#BABFC7]">
+        <span class="text-white">empty</span>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-t-0 border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>in</option>
+        </select>
+      </div>
+      <div class="p-2 border-[1px] border-t-0 border-[#BABFC7]">
+        <span class="text-white">empty</span>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-t-0 border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>in</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- col-3 -->
+    <div class="min-w-[11.666%] max-w-fit m-1 mr-0 whitespace-nowrap">
+      <div
+        class="px-2 py-1 bg-[#7FC8E0] rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Minimum</h1>
+        <div class="flex gap-1">
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clone"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clipboard"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#7FC8E0] odd-rows">
+        <div class="px-2 py-[8.9px] border-b-[1px] border-[#BABFC7]">
+          6000.0000
+        </div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          150.0000
+        </div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">4000</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          300.000
+        </div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          0.8000
+        </div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          0.8000
+        </div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-white">empty</span>
+        </div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div class="flex-1 flex justify-between items-center p-2">
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- col-4 -->
+    <div class="min-w-[11.66%] max-w-fit m-1 mr-0 whitespace-nowrap">
+      <div
+        class="px-2 py-1 bg-[#7FC8E0] rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Normal</h1>
+        <div class="flex gap-1">
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clone"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clipboard"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#7FC8E0] odd-rows">
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">psia</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">bar</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">Ib/h</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">degR</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">M</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">cSt</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-white">empty</span>
+        </div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div class="flex-1 flex justify-between items-center p-2">
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- col-5 -->
+    <div class="min-w-[11.66%] max-w-fit m-1 mr-0 whitespace-nowrap">
+      <div
+        class="px-2 py-1 bg-[#7FC8E0] rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Maximum</h1>
+        <div class="flex gap-1">
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clone"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clipboard"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#7FC8E0] odd-rows">
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">bar</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">psia</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">Ib/h</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">degR</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">M</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">cSt</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-white">empty</span>
+        </div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div class="flex-1 flex justify-between items-center p-2">
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- col-6 -->
+    <div class="min-w-[11.66%] max-w-fit m-1 mr-0 whitespace-nowrap">
+      <div
+        class="px-2 py-1 bg-[#7FC8E0] rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Others</h1>
+        <div class="flex gap-1">
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clone"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clipboard"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#7FC8E0] odd-rows">
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">psia</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">bar</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">Ib/h</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">degR</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">M</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">cSt</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-white">empty</span>
+        </div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div class="flex-1 flex justify-between items-center p-2">
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- col-7 -->
+    <div class="min-w-[11.66%] max-w-fit m-1 mr-0 whitespace-nowrap">
+      <div
+        class="px-2 py-1 bg-[#7FC8E0] rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Others</h1>
+        <div class="flex gap-1">
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clone"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clipboard"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#7FC8E0] odd-rows">
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">bar</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">Ib/h</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">degR</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">M</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">cSt</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">psia</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-white">empty</span>
+        </div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div class="flex-1 flex justify-between items-center p-2">
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- col-8 -->
+    <div class="min-w-[11.66%] max-w-fit m-1 whitespace-nowrap">
+      <div
+        class="px-2 py-1 bg-[#7FC8E0] rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Others</h1>
+        <div class="flex gap-1">
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clone"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-regular fa-clipboard"></i>
+          </button>
+
+          <button class="bg-[#F2F4F7] rounded-md py-[2px] px-[4px]">
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#7FC8E0] odd-rows">
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">psia</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">bar</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">Ib/h</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">degR</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">M</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">cSt</div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-white">empty</span>
+        </div>
+        <div class="px-2 py-[8.5px] border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="text-[#F3F3F3]">empty</span>
+        </div>
+        <div class="flex-1 flex justify-between items-center p-2">
+          <select class="bg-transparent w-full">
+            <option selected>in</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

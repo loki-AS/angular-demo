@@ -1,0 +1,618 @@
+<div
+  class="text-xs border-[1px] border-[#004B8D] card-shadow rounded-lg overflow-hidden"
+>
+  <div class="flex bg-[#004B8D] justify-between items-center p-2 rounded-t-lg">
+    <h1 class="text-white">Sizing Output</h1>
+  </div>
+
+  <div class="flex text-xs">
+    <!-- col-1 -->
+    <div class="w-[20%] mb-1 whitespace-nowrap">
+      <h1 class="p-2 font-semibold border-b-[1px] border-b-[#BABFC7]">Name</h1>
+      <div class="t-body">
+        <p class="px-2 py-[8.9px] border-b-[1px] border-b-[#BABFC7]">Gas</p>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-b-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>Mass Flow Rate gas</option>
+          </select>
+        </div>
+        <p class="px-2 py-[8.5px] border-b-[1px] border-b-[#BABFC7]">
+          Inlet Pressure
+        </p>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-b-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>Pressure Differential</option>
+          </select>
+        </div>
+        <p class="px-2 py-[8.9px] border-b-[1px] border-b-[#BABFC7]">
+          Inlet Temperature
+        </p>
+        <p class="px-2 py-[8.5px] border-b-[1px] border-b-[#BABFC7]">
+          Molecular Weight / Specific Gravity
+        </p>
+        <p class="p-2 border-b-[1px] border-b-[#BABFC7]">
+          Inlet Compressibility Factor
+        </p>
+        <div
+          class="flex items-center gap-2 px-2 py-[8.8px] border-b-[1px] border-b-[#BABFC7]"
+        >
+          <input type="checkbox" checked />
+          <p>Recovery Factor (FI)</p>
+        </div>
+        <div
+          class="flex items-center gap-2 p-2 border-b-[1px] border-b-[#BABFC7]"
+        >
+          <input type="checkbox" checked />
+          <p>Valve Style Modifier (FD)</p>
+        </div>
+        <div
+          class="flex items-center gap-2 px-2 py-[8.5px] border-b-[1px] border-b-[#BABFC7]"
+        >
+          <input type="checkbox" checked />
+          <p>Valve Diameter</p>
+        </div>
+        <p
+          class="p-2 border-b-[1px] border-b-[#BABFC7] font-semibold bg-[#F3F3F3]"
+        >
+          RC Noise Outputs
+        </p>
+        <p class="p-2 border-b-[1px] border-b-[#BABFC7]">
+          Whisper II Trim Level
+        </p>
+      </div>
+    </div>
+
+    <!-- col-2 -->
+    <div class="w-[10%] mb-1 whitespace-nowrap">
+      <h1 class="p-2 font-semibold border-x-[1px] border-[#BABFC7]">Unit</h1>
+      <div
+        class="flex-1 p-2 flex justify-between items-center border-[1px] border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>Ib/h</option>
+        </select>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-x-[1px] border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>psia</option>
+        </select>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>bar</option>
+        </select>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-t-0 border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>degR</option>
+        </select>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-t-0 border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>M</option>
+        </select>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-t-0 border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>cSt</option>
+        </select>
+      </div>
+      <div class="p-2 border-[1px] border-t-0 border-[#BABFC7]">
+        <span class="text-white">empty</span>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-t-0 border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>In</option>
+        </select>
+      </div>
+      <div class="p-2 border-[1px] border-t-0 border-[#BABFC7]">
+        <span class="text-white">empty</span>
+      </div>
+      <div
+        class="flex-1 flex justify-between items-center p-2 border-[1px] border-t-0 border-[#BABFC7]"
+      >
+        <select class="bg-transparent w-full">
+          <option selected>In</option>
+        </select>
+      </div>
+      <div
+        class="p-2 border-[1px] border-t-0 border-[#BABFC7] bg-[#F3F3F3] text-[#F3F3F3]"
+      >
+        empty
+      </div>
+      <div class="p-2 border-[1px] border-t-0 border-[#BABFC7]">
+        <span class="text-white">empty</span>
+      </div>
+    </div>
+
+    <!-- col-3 -->
+    <div class="min-w-[11.666%] max-w-fit m-1 mr-0 whitespace-nowrap">
+      <div
+        class="px-2 py-[5.9px] secondary-bg rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Minimum</h1>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#F8B11E] odd-rows">
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>22.4</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>336862.980</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>20.0152078</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.2657075</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.9987424</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.7297041</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.605903</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.1749605</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <p
+          class="p-2 border-b-[1px] border-[#BABFC7] bg-[#F3F3F3] text-[#F3F3F3]"
+        >
+          empty
+        </p>
+        <p class="p-2 text-white">empty</p>
+      </div>
+    </div>
+
+    <!-- col-4 -->
+    <div class="min-w-[11.66%] max-w-fit m-1 mr-0 whitespace-nowrap">
+      <div
+        class="px-2 py-[5.9px] secondary-bg rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Normal</h1>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#F8B11E] odd-rows">
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>22.4</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>336862.980</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>20.0152078</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.2657075</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.9987424</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.7297041</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.605903</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.1749605</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <p
+          class="p-2 border-b-[1px] border-[#BABFC7] bg-[#F3F3F3] text-[#F3F3F3]"
+        >
+          empty
+        </p>
+        <p class="p-2 text-white">empty</p>
+      </div>
+    </div>
+
+    <!-- col-5 -->
+    <div class="min-w-[11.66%] max-w-fit m-1 mr-0 whitespace-nowrap">
+      <div
+        class="px-2 py-[5.9px] secondary-bg rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Maximum</h1>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#F8B11E] odd-rows">
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>22.4</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>336862.980</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>20.0152078</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.2657075</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.9987424</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.7297041</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.605903</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.1749605</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <p
+          class="p-2 border-b-[1px] border-[#BABFC7] bg-[#F3F3F3] text-[#F3F3F3]"
+        >
+          empty
+        </p>
+        <p class="p-2 text-white">empty</p>
+      </div>
+    </div>
+
+    <!-- col-6 -->
+    <div class="min-w-[11.66%] max-w-fit m-1 mr-0 whitespace-nowrap">
+      <div
+        class="px-2 py-[5.9px] secondary-bg rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Others</h1>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#F8B11E] odd-rows">
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>22.4</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>336862.980</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>20.0152078</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.2657075</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.9987424</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.7297041</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.605903</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.1749605</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <p
+          class="p-2 border-b-[1px] border-[#BABFC7] bg-[#F3F3F3] text-[#F3F3F3]"
+        >
+          empty
+        </p>
+        <p class="p-2 text-white">empty</p>
+      </div>
+    </div>
+
+    <!-- col-7 -->
+    <div class="min-w-[11.66%] max-w-fit m-1 mr-0 whitespace-nowrap">
+      <div
+        class="px-2 py-[5.9px] secondary-bg rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Others</h1>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#F8B11E] odd-rows">
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>22.4</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>336862.980</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>20.0152078</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.2657075</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.9987424</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.7297041</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.605903</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.1749605</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <p
+          class="p-2 border-b-[1px] border-[#BABFC7] bg-[#F3F3F3] text-[#F3F3F3]"
+        >
+          empty
+        </p>
+        <p class="p-2 text-white">empty</p>
+      </div>
+    </div>
+
+    <!-- col-8 -->
+    <div class="min-w-[11.66%] max-w-fit m-1 whitespace-nowrap">
+      <div
+        class="px-2 py-[5.9px] secondary-bg rounded-t-lg flex justify-between items-center gap-3"
+      >
+        <h1 class="font-semibold">Others</h1>
+      </div>
+      <div class="border-[1px] rounded-b-lg border-[#F8B11E] odd-rows">
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>22.4</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>336862.980</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>20.0152078</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.2657075</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.9987424</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.7297041</option>
+          </select>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.605903</option>
+          </select>
+        </div>
+        <div class="p-2 border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <div
+          class="flex-1 flex justify-between items-center p-2 border-b-[1px] border-[#BABFC7]"
+        >
+          <select class="bg-transparent w-full">
+            <option selected>0.1749605</option>
+          </select>
+        </div>
+        <div class="p-2 font-semibold border-b-[1px] border-[#BABFC7]">
+          <span class="odd-text">empty</span>
+        </div>
+        <p
+          class="p-2 border-b-[1px] border-[#BABFC7] bg-[#F3F3F3] text-[#F3F3F3]"
+        >
+          empty
+        </p>
+        <p class="p-2 text-white">empty</p>
+      </div>
+    </div>
+  </div>
+</div>
